@@ -1,0 +1,9 @@
+task2-ci-cd/
+│
+├── app/                ← copy of task1 Flask project
+│     ├ app.py
+│     ├ requirements.txt
+│     ├ Dockerfile
+│     └ docker-compose.yml
+│
+└── .github/workflows/ci.yml

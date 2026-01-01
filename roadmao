@@ -1,0 +1,22 @@
+alfido-devops-labs/
+├─ task1-dockerize/
+│  ├ app.py
+│  ├ requirements.txt
+│  ├ Dockerfile
+│  ├ docker-compose.yml
+│  └ README.md
+├─ task2-ci-cd/
+│  ├ .github/workflows/ci.yml
+│  └ README.md
+├─ task3-terraform/
+│  ├ main.tf
+│  └ README.md
+├─ task4-monitoring/
+│  ├ docker-compose.yml
+│  ├ prometheus.yml
+│  └ README.md
+└─ docs/
+   ├ task1-doc.md
+   ├ task2-doc.md
+   ├ task3-doc.md
+   └ task4-doc.md

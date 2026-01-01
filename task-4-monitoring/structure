@@ -1,0 +1,19 @@
+task-4-monitoring/
+│
+├── app/
+│   └── app.py
+│
+├── prometheus/
+│   └── prometheus.yml
+│
+├── screenshots/
+│   ├── prometheus-targets-up.png
+│   ├── grafana-dashboard.png
+│   ├── docker-containers-running.png
+│   └── alert-firing.png
+│
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── README.md
+└── Task-4-Monitoring-Logging-Incident-Response.pdf

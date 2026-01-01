@@ -1,0 +1,56 @@
+
+### **Task 4 – Monitoring, Logging & Incident Response**
+
+
+
+**Description:**  
+
+Implemented monitoring, logging, and alerting for a containerized FastAPI 
+
+application using Prometheus and Grafana.
+
+Metrics are collected via Prometheus and visualized using Grafana dashboards.
+
+Alert rules were configured to detect service downtime, and an incident response
+
+runbook was prepared and tested.
+
+**GitHub Repository:**  
+
+👉 `<https://github.com/Kavi-n-alt/alfido-devops-labs>`
+
+
+**Documentation:**  
+
+
+👉 `Task-4-Monitoring-Logging-Incident-Response.pdf`
+
+
+**Screenshots:**  
+
+
+Included in the `screenshots/` folder
+
+
+(Prometheus targets, Grafana dashboard, running containers, alert firing).
+
+
+**Commands Used:**
+
+
+```bash
+
+
+docker compose up --build
+
+docker ps
+
+docker logs fastapi_app
+
+docker compose stop app
+
+docker compose start app
+
+Status:
+
+All services verified and alerting tested successfully.
