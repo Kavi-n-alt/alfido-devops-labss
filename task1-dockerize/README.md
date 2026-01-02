@@ -30,6 +30,39 @@ Expected output:
 - How docker-compose simplifies running containers
 - How to expose ports and test endpoints
 
+## Frontend & Architecture
+
+I added a simple React (Vite) frontend served by NGINX. The structure is:
+
+```
+task1-dockerize/
+├── backend/ (existing Flask app under `app/`)
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── Dockerfile
+│   └── package.json
+├── docker-compose.yml
+```
+
+Architecture notes:
+- The backend service is available as the `web` service on port `5000` inside the docker-compose network.
+- The frontend is built with Vite and during image build receives the backend URL via build-arg `VITE_API_URL` (set in `docker-compose.yml`).
+- The frontend calls the backend using the service name `web` (for example `http://web:5000/health`). This avoids using `localhost` and works inside containers.
+
+Run instructions (build + run):
+
+```bash
+# from task1-dockerize root
+docker compose build
+docker compose up -d
+
+# Frontend will be available at http://localhost:3000
+# Backend (Flask) will be available at http://localhost:5000
+```
+
+If you want me to simplify the backend Dockerfile or fix the multiple-stage issues in the existing backend image, I can do that next.
+
 ## Development (live reload / file-watch) ✅
 You can run the project in development mode with live reload for both Flask (port 5000) and Streamlit (port 8501).
 

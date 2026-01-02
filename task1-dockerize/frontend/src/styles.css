@@ -1,0 +1,17 @@
+:root{
+  --bg:#f7f8fb;--card:#ffffff;--muted:#6b6f76;--accent:#0366d6;--success:#10893e;--danger:#d64545
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{margin:0;background:var(--bg);color:#0b1220}
+.container{max-width:980px;margin:28px auto;padding:20px}
+header{display:flex;justify-content:space-between;align-items:center}
+.status{font-size:0.95rem}
+.status .up{color:var(--success)}
+.status .down{color:var(--danger)}
+.controls{margin:18px 0}
+.controls button{margin-right:8px;padding:8px 12px}
+.create{display:flex;gap:8px;margin-bottom:12px}
+.create input{flex:1;padding:8px}
+.list table{width:100%;border-collapse:collapse;background:var(--card)}
+.list th,.list td{padding:10px;border-bottom:1px solid #eee;text-align:left}
+footer{margin-top:18px;color:var(--muted);font-size:0.9rem}

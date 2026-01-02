@@ -11,7 +11,7 @@ services:
 
     environment:
       - FLASK_ENV=development
-      - FLASK_APP=app.py
+      - FLASK_APP=app.main:app
       - PYTHONUNBUFFERED=1
       # Optional: enable polling-based reloader if inotify isn't working on your host
       # Set WATCHDOG_USE_POLLING=1 in `.env` to enable watchmedo polling
